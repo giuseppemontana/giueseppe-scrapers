@@ -2,14 +2,13 @@ name: Babepedianet
 performerByURL:
   - action: scrapeXPath
     url:
-      - https://www.babepedia.net/
+      - https://babepedia.net/
     scraper: performerScraper
 
 xPathScrapers:
   performerScraper:
     common:
-      $infoblock: //html/body/main/
-      $biography: //html/body/main/table
+      $infoblock: //html/body/main
     performer:
       Name: //html/body/section/div/h1/text()
       Gender:
